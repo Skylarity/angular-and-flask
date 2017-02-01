@@ -1,0 +1,9 @@
+<div ng-repeat="post in posts">
+	<h2>{{ post }}</h2>
+</div>
+<div>
+	<button class="btn btn-outline-success" ng-click="post()">Post something</button>
+</div>
+<div ng-hide="output === null">
+	<p class="alert alert-success">{{ output }}</p>
+</div>
