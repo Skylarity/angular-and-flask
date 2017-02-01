@@ -13,8 +13,6 @@ def post():
 	if request.method == "GET":
 		to_return = ["Test", "Testing", "This is also a test", "More", "Tests", "Are", "Here"]
 		return json.dumps(to_return)
-	elif request.method == "POST":
-		return "Posted"
 
 
 @app.route("/api/post/<int:post_id>", methods=["POST"])
