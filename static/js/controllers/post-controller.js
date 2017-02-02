@@ -10,7 +10,7 @@ app.controller("PostController", ["$scope", "PostService", function($scope, Post
 	}
 
 	$scope.post = function() {
-		PostService.post(Math.floor(Math.random() * 100))
+		PostService.post({id: Math.floor(Math.random() * 100)})
 			.then(function(reply) {
 				$scope.output = reply.data;
 			});

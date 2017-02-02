@@ -3,7 +3,7 @@ app.service("PostService", function($http) {
 		return $http.get("/api/post/");
 	}
 
-	this.post = function(id) {
-		return $http.post("/api/post/" + id);
+	this.post = function(body) {
+		return $http.post("/api/post/", body);
 	}
 });
